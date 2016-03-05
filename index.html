@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Raw JS Lightbox</title>
+    <link href='https://fonts.googleapis.com/css?family=Nunito:400,300,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/app.css" media="screen" title="no title" type="text/css">
+  </head>
+  <body>
+    <header>
+      <div class="wrap">
+        <div class="search">
+          <label for="filter-search">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+              <path d="M0 0h24v24H0z" fill="none"/>
+          </svg>
+        </label>
+          <input type="search" name="name" id="filter-search" placeholder="search to filter">
+        </div>
+
+        <div class="">
+
+        </div>
+      </div>
+    </header>
+    <div class="gallery wrap" id="photos">
+      <div class="photo">
+        <div class="title-overlay">
+          <span class="test" >Plains</span>
+        </div>
+        <img src="img/thumbnails/01.jpg" alt="plains" />
+      </div>
+      <div class="photo">
+        <div class="title-overlay">
+          <span class="test" >Lake</span>
+        </div>
+        <img src="img/thumbnails/02.jpg" alt="lake" />
+      </div>
+      <div class="photo">
+        <div class="title-overlay">
+          <span class="test">Fields</span>
+        </div>
+        <img src="img/thumbnails/03.jpg" alt="fields" />
+      </div>
+      <div class="photo">
+        <div class="title-overlay">
+          <span class="test">Glacier</span>
+        </div>
+        <img src="img/thumbnails/04.jpg" alt="glacier" />
+      </div>
+      <div class="photo">
+        <div class="title-overlay">
+          <span class="test">Canyon</span>
+        </div>
+        <img src="img/thumbnails/05.jpg" alt="canyon" />
+      </div>
+      <div class="photo">
+        <div class="title-overlay">
+          <span class="test">Trees</span>
+        </div>
+        <img src="img/thumbnails/06.jpg" alt="trees" />
+      </div>
+      <div class="photo">
+        <div class="title-overlay">
+          <span class="test">Rice</span>
+        </div>
+        <img src="img/thumbnails/07.jpg" alt="rice" />
+      </div>
+      <div class="photo">
+        <div class="title-overlay">
+          <span class="test">Beach</span>
+        </div>
+        <img src="img/thumbnails/08.jpg" alt="beach" />
+      </div>
+    <div class="photo">
+      <div class="title-overlay">
+        <span class="test">Trail</span>
+      </div>
+      <img src="img/thumbnails/09.jpg" alt="trail" />
+    </div>
+    <div class="photo">
+      <div class="title-overlay">
+        <span class="test">Waves</span>
+      </div>
+      <img src="img/thumbnails/10.jpg" alt="waves" />
+    </div>
+    <div class="photo">
+      <div class="title-overlay">
+        <span class="test">View</span>
+      </div>
+      <img src="img/thumbnails/11.jpg" alt="view" />
+    </div>
+    <div class="photo">
+      <div class="title-overlay">
+        <span class="test">Mountains</span>
+      </div>
+      <img src="img/thumbnails/12.jpg" alt="mountains" />
+    </div>
+    <div class="photo">
+      <div class="title-overlay">
+        <span class="test">Donuts</span>
+      </div>
+      <img src="img/thumbnails/13.jpg" alt="Last Donut of the Night" />
+    </div>
+
+  </div>
+
+    <footer>
+      <p id="date" class=" wrap copyright">
+      </p>
+    </footer>
+    <div class="overlay" id="overlay">
+      <div class="lightbox">
+        <span class="left" id="left"></span>
+        <div class="content">
+          <span class="close" id="close">
+
+          </span>
+
+
+            <img  src="img/01.jpg" alt="plains" class="image"/>
+            <img  src="img/02.jpg" alt="lake" class="image" />
+            <img  src="img/03.jpg" alt="fields" class="image" />
+            <img  src="img/04.jpg" alt="glacier" class="image" />
+            <img  src="img/05.jpg" alt="canyon" class="image" />
+            <img  src="img/06.jpg" alt="trees" class="image" />
+            <img  src="img/07.jpg" alt="rice" class="image" />
+            <img  src="img/08.jpg" alt="beach" class="image" />
+            <img  src="img/09.jpg" alt="trail" class="image" />
+            <img  src="img/10.jpg" alt="waves" class="image" />
+            <img  src="img/11.jpg" alt="view" class="image" />
+
+            <img  src="img/12.jpg" alt="mountains" class="image" />
+            <iframe src="https://www.youtube.com/embed/fC3Cthm0HFU" name="Last Donut of the Night" class="image" height="375" allowfullscreen id="video"></iframe>
+
+          <div class="caption">
+            <p id="text">
+              Last Donut of the Night
+            </p>
+          </div>
+        </div>
+        <span class="right" id="right"></span>
+      </div>
+    </div>
+
+    <script src="js/app.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      var d,
+          date;
+      date = document.getElementById("date");
+      d = "Copyright &copy; " + new Date().getFullYear() + " Kelsey Jackson";
+      date.innerHTML = d;
+    </script>
+  </body>
+</html>

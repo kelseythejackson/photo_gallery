@@ -1,0 +1,23 @@
+@mixin box-sizing($box) {
+  @include prefixer(box-sizing, $box, webkit moz ms o spec);
+}
+
+*,
+*::before,
+*::after {
+  @include box-sizing(border-box);
+}
+
+body {
+  background: $bg-color;
+  color: $font-color;
+}
+
+.wrap {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  max-width: 980px;
+}
